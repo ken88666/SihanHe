@@ -4158,18 +4158,17 @@ input, select, textarea {
 
 
 
-/*my custom css*/
-@font-face {
-	font-family: 'Misans';
-	src: url('/assets/webfonts/woff/MiSansLatin-ExtraLight.woff') format('woff');
-	font-weight: 200;
-	font-style: normal;
-}
-
 
 
 
 /*default tweaks*/
+body {
+  	background: linear-gradient(to bottom, #433636, #25303c);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .custom-header {
     position: relative !important;
     display: flex;
@@ -4180,6 +4179,7 @@ input, select, textarea {
     background-color: #000 !important;
     z-index: 21;
 }
+
 
 /* 左侧 Logo 固定宽度 */
 .custom-header .logo {
@@ -4546,7 +4546,7 @@ section.wrapper {
 }
 
 .wrapper .content p {
-    font-family: 'Misans', sans-serif !important;
+    font-family: 'Rubik', sans-serif !important;
     font-size: 1rem;
 	font-weight: 200;
     line-height: 1.6;
@@ -4638,7 +4638,7 @@ a.special::before {
 }
 
 #four .features2 p {
-    font-family: 'Misans', sans-serif !important;
+    font-family: 'Rubik', sans-serif !important;
     font-size: 1rem;
     font-weight: 400;
 	text-align: center;
@@ -4716,7 +4716,7 @@ a.special::before {
 #footer h2,
 #footer p,
 #footer .contact {
-	font-family: 'Misans', sans-serif !important;
+	font-family: 'Rubik', sans-serif !important;
 	font-weight: 200;
 }
 
@@ -4730,7 +4730,7 @@ a.special::before {
 		max-width: 1600px;
 		margin-left: auto;
 		margin-right: auto;
-		box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+		box-shadow: 0 0 80px rgba(0, 0, 0, 0.93);
 	}
 
 	.slick-dots li button {
@@ -4841,7 +4841,7 @@ label.hamburger::after {
 		color: #ffffff !important;
 		border-bottom: 1px solid #ff0000 !important;
 		padding: 0;
-		font-family: 'Misans', sans-serif;
+		font-family: 'Rubik', sans-serif;
 		font-size: 1.5rem;
 		font-weight: 200;
 		text-decoration: none;
