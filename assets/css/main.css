@@ -4519,7 +4519,7 @@ section.wrapper {
     background-color: #511717 !important;  /* 更深一点 */
 }
 #three {
-    background-color: #525252 !important;  /* 深灰色 */
+    background-color: #3a3a3a !important;  /* 深灰色 */
 }
 
 .image,
@@ -4588,7 +4588,7 @@ a.special::before {
     height: auto;
     display: flex;
     justify-content: center;
-    background-color: #6b1b1b;
+    background-color: #511717;
     margin: 0;
 }
 
