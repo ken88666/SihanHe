@@ -41,10 +41,10 @@
 								<span></span>
 								<span></span>
 							</label>
-							<nav class="mobile-nav">
+							<nav id= "nav" class="mobile-nav">
 								<a href="#works">Works</a>
 								<a href="#services">Services</a>
-								<a href="#projects">Intentory</a>
+								<a href="#projects">Inventory</a>
 								<a href="#about">Social</a>
 								<a href="#contact">Contact</a>
 							</nav>
@@ -182,29 +182,16 @@
 			<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 			<script>
-				document.addEventListener('click', function (event) {
-					const menu = document.getElementById('menu');
-					const navToggle = document.getElementById('nav-toggle');
-
-					if (menu.contains(event.target)) return;
-
-					navToggle.checked = false;
-				});
+			document.getElementById('menu').addEventListener(
+				'click',
+				function (e) {
+					if (e.target.matches('input, textarea, select, button, label')) 
+					{e.stopImmediatePropagation();}
+				},
+				true //prioritize this event listener
+			);
 			</script>
-			
-			<script>
-			$(document).ready(function(){
-				$('.carousel-track').slick({
-					autoplay: true,
-					autoplaySpeed: 3000,
-					arrows: true,
-					dots: true,
-					infinite: true,
-					slidesToShow: 1,
-					slidesToScroll: 1,
-				});
-			});
-			</script>
+
 	</body>
 
 </html>
