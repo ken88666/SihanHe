@@ -4381,8 +4381,8 @@ body {
     border: none !important;
     box-shadow: none !important;
     color: white;
-	width: clamp(36px, 4vw, 64px);   /* 最小36px，最大64px */
-	height: 200px;
+	width: clamp(50px, 4vw, 64px);   /* 最小36px，最大64px */
+	height: 100%;
     position: absolute;
     top: 50%;
     z-index: 10;
