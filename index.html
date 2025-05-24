@@ -182,6 +182,20 @@
 			<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 			<script>
+			$(document).ready(function(){
+				$('.carousel-track').slick({
+					autoplay: true,
+					autoplaySpeed: 3000,
+					arrows: true,
+					dots: true,
+					infinite: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				});
+			});
+			</script>
+
+			<script>
 			document.getElementById('menu').addEventListener(
 				'click',
 				function (e) {
