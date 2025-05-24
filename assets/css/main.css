@@ -4181,7 +4181,7 @@ body {
 }
 
 
-/* 左侧 Logo 固定宽度 */
+
 .custom-header .logo {
     width: 182px;
     display: flex;
@@ -4192,12 +4192,12 @@ body {
     display: block;
 }
 .logo a {
-    text-decoration: none !important;    /* 清除下划线 */
-    outline: none !important;            /* 清除点击虚线 */
-    border: none !important;             /* 清除可能的 border-bottom */
+    text-decoration: none !important;
+    outline: none !important;  
+    border: none !important;
 }
 
-/* 右侧菜单按钮也固定宽度 */
+
 .custom-header .menu-button {
     width: 182px;
     display: flex;
@@ -4205,7 +4205,7 @@ body {
     align-items: center;
 }
 
-/* 中间五连按钮 */
+/* 5 buttons */
 .floating-nav {
     position: absolute;
     left: 50%;
@@ -4217,12 +4217,12 @@ body {
     align-items: flex-end;
     pointer-events: auto;
 }
-/* 保留原样式的基础上加 hover 效果 */
+/*  hover  */
 .floating-nav a {
     padding: 0;
     pointer-events: auto;
     transition: all 0.17s ease;
-    font-family: 'Arial', sans-serif !important;   /* ✅ 修改字体家族 */
+    font-family: 'Arial', sans-serif !important;
     font-size: 15px !important;
     font-weight: 600 !important;
     letter-spacing: 0.5px;
@@ -4237,7 +4237,7 @@ body {
     box-shadow: none;
 }
 
-/* 登录按钮 */
+
 .login-button {
     height: 36px;
     line-height: 36px;
@@ -4258,8 +4258,7 @@ body {
     color: black !important;
 }
 
-
-/* 登录弹窗外层容器美化 */
+/* login interface */
 #menu.login-popup {
     padding: 2em;
     background: #111;
@@ -4267,7 +4266,6 @@ body {
     text-align: center;
 }
 
-/* 去掉 h2 的下划线或内置样式 */
 #menu.login-popup h2 {
     border: none;
     margin-bottom: 1em;
@@ -4288,16 +4286,16 @@ body {
     color: white;
 }
 
-/* 提交界面美化 */
+/* login interface */
 #menu.login-popup {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.444);      /* ✅ 半透明黑底 */
-    backdrop-filter: blur(10px);         /* ✅ 高斯模糊效果 */
-    -webkit-backdrop-filter: blur(10px); /* ✅ Safari兼容 */
+    background: rgba(0, 0, 0, 0.444);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     
     display: flex;
     flex-direction: column;
@@ -4381,7 +4379,7 @@ body {
     border: none !important;
     box-shadow: none !important;
     color: white;
-	width: clamp(50px, 4vw, 64px);   /* 最小36px，最大64px */
+	width: clamp(50px, 4vw, 64px);
 	height: 100%;
     position: absolute;
     top: 50%;
@@ -4513,13 +4511,13 @@ section.wrapper {
     overflow: hidden;
 }
 #one {
-    background-color: #3a3a3a !important;  /* 深灰色 */
+    background-color: #3a3a3a !important;
 }
 #two {
-    background-color: #511717 !important;  /* 更深一点 */
+    background-color: #511717 !important;
 }
 #three {
-    background-color: #3a3a3a !important;  /* 深灰色 */
+    background-color: #3a3a3a !important;
 }
 
 .image,
@@ -4554,7 +4552,7 @@ section.wrapper {
 }
 
 .wrapper .content a.special {
-	letter-spacing: 0 !important;         /* ✅ 去掉间距 */
+	letter-spacing: 0 !important;
     font-family: 'Rubik', sans-serif !important;
 	font-style: italic;
     font-size: 0.95rem;
@@ -4754,7 +4752,7 @@ a.special::before {
 
 
 
-/* 基础隐藏：汉堡、移动端 nav 默认都隐藏 */
+/* hide mobile burger nav bar by default */
 .nav-toggle,
 .hamburger,
 .mobile-nav {
@@ -4763,7 +4761,8 @@ a.special::before {
 
 label.hamburger::before,
 label.hamburger::after {
-	content: none !important;          /* ✅ 完全移除伪元素内容 */
+	content: none !important;
+	
 	display: none !important;
 	background: transparent !important;
 	border: none !important;
@@ -4773,12 +4772,12 @@ label.hamburger::after {
 
 /* ≤980px */
 @media screen and (max-width: 980px) {
-  /* 隐藏大屏五连按钮 */
+  /* hide desktop nav bar */
   	.floating-nav {
 		display: none !important;
 	}
 
-  	/* 让 header 变为可换行的 row 布局 */
+  	/* header in two row */
   	.custom-header {
 		display: flex;
 		flex-wrap: wrap;
@@ -4789,10 +4788,10 @@ label.hamburger::after {
 		padding-top: 0;
   	}
 
-  /* 第一行：Logo 独占一整行 */
+  /* Logo */
   	.custom-header .logo {
 		order: 1;
-		flex: 1 1 100%;     /* 独占一行 */
+		flex: 1 1 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -4805,42 +4804,41 @@ label.hamburger::after {
 		height: 65px !important;
 	}
 
-  /* 第二行：login + 汉堡 同排 */
+  /* login + burger */
 	.custom-header .menu-button,
 	.custom-header .hamburger {
 		order: 2;
-		flex: 0 0 auto;     /* 宽度自适应内容 */
+		flex: 0 0 auto;
 		display: flex;
 		align-items: center;
 		height: 60px;
 		padding-right: 10px;
 	}
 
-	/* login 按钮推到最右 */
+	/* login */
 	.custom-header .menu-button {
 		margin-left: auto;
 	}
 
 
-	/* 滑出菜单位置自动贴在 header 底部 */
 	.mobile-nav {
 		position: absolute;
-		top: 100%!important;               /* 或 top: 120px; 根据你 header 实际高度 */
+		top: 100%!important;
 		left: 0;
 		right: 0;
 		display: none;
 		flex-direction: column;
 		padding: 0;
-		width: 200px;            /* ✅ 固定宽度 */
-		height: auto;            /* ✅ 自动根据内容撑开高度 */
+		width: 200px;
+		height: auto;
 		z-index: 40;
 	}
 
 	.mobile-nav a {
 		display: block;
-		background: rgba(0, 0, 0, 0.581);      /* ✅ 半透明白 */
-		backdrop-filter: blur(10px);              /* ✅ 背景模糊 */
-		-webkit-backdrop-filter: blur(10px);      /* ✅ Safari 支持 */
+		background: rgba(0, 0, 0, 0.581);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px); /* friendly for Safari */
 		color: #ffffff !important;
 		border-bottom: 1px solid #ff0000 !important;
 		padding: 0;
@@ -4858,19 +4856,19 @@ label.hamburger::after {
 		border-color: #d8d0d0;
 	}
 
-  /* 确保 hamburger 是一个完全集中布局的 flex 容器 */
+  /* hamburger is a flex container */
 	.custom-header .hamburger {
 		display: flex !important;
 		flex-direction: column;
-		align-items: center;    /* 水平居中 */
-		justify-content: center;/* 垂直居中 */
-		gap: 6px;               /* 三条杠之间的固定间距 */
+		align-items: center;
+		justify-content: center;
+		gap: 6px;
 		width: 80px;
 		height: 100%px;
 		background: #000000;
 		/* border: 2px solid #7f7f7f99; */
 		border-radius: 4px;
-		padding: 0;             /* 去掉任何内边距 */
+		padding: 0;
 		margin:0em;
 		box-sizing: border-box;
   	}
@@ -4878,7 +4876,7 @@ label.hamburger::after {
   /* 3 lines */
   	.custom-header .hamburger span {
 		display: block;
-		width: 24px;            /* 40px 的 60% */
+		width: 24px;
 		height: 3px;
 		background: #ffffff;
 		align-items: left;
@@ -4923,16 +4921,16 @@ label.hamburger::after {
 		height: auto !important;
 	}
 
-	/* 可选：让 .inner 自动撑开内容高度 */
+
 	.wrapper.spotlight .inner {
 		height: auto !important;
-		flex-direction: column; /* 防止横排残留 */
+		flex-direction: column;
 	}
 	#one .major,
 	#two .major,
 	#three .major {
-		margin-top: 0 !important;         /* ✅ 清除默认上边距 */
-		padding-top: 20px !important;     /* ✅ 改为 padding */
+		margin-top: 0 !important;
+		padding-top: 20px !important;
 	}
 	#one.wrapper.spotlight,
 	#two.wrapper.spotlight,
@@ -4942,8 +4940,8 @@ label.hamburger::after {
 	.wrapper.spotlight.style1,
 	.wrapper.spotlight.style2,
 	.wrapper.spotlight.style3 {
-		height: auto !important;        /* ✅ 自动根据内容撑高 */
-		min-height: unset !important;   /* ✅ 清除模板可能设置的 min-height */
+		height: auto !important;
+		min-height: unset !important;
 	}
 
 	#one .content,
@@ -4967,10 +4965,10 @@ label.hamburger::after {
 	#four .features1 {
 		width: 100% !important;
 		display: flex;
-		justify-content: center;     /* ✅ 水平居中 iframe */
-		align-items: flex-start;     /* ✅ 顶部对齐 iframe */
-		margin: 0 auto;              /* ✅ 让这个容器本身在父级中居中 */
-		padding-top: 2%;           /* 可选：上间距 */
+		justify-content: center;
+		align-items: flex-start;
+		margin: 0 auto;
+		padding-top: 2%;
 	}
 
 	#four .features2 {
@@ -4986,7 +4984,7 @@ label.hamburger::after {
 		align-items: center!important;
 		padding: 10px !important;
 		width: 100% !important;
-    	max-width: 600px!important;   /* ✅ 不超过父容器 */
+    	max-width: 600px!important;
 	}
 	#four .features1 iframe {
 		align-items: right!important;
@@ -4996,8 +4994,8 @@ label.hamburger::after {
 		border: none;
 		border-radius: 12px;
 		display: block;
-		max-width: 100% !important;   /* ✅ 不超过父容器 */
-		width: 100% !important;       /* ✅ 自动填满容器 */
+		max-width: 100% !important;
+		width: 100% !important;
 		height: auto !important;
 	}
 
@@ -5037,20 +5035,20 @@ label.hamburger::after {
 
 
 	#footer .contact {
-		display: block;                   /* ✅ 竖向堆叠每个 li */
+		display: block;
 		max-width: 100%;
 		padding: 0;
 		margin: 0 auto;
 	}
 
 	#footer .contact li {
-		max-width: 98%!important;   /* ✅ 不超过父容器 */
+		max-width: 98%!important;
 		list-style: none;
-		display: block;                   /* ✅ 确保是块级元素 */
-		margin-bottom: 1rem;             /* ✅ 项与项之间留空 */
-		word-wrap: break-word;           /* ✅ 长词自动换行 */
+		display: block;
+		margin-bottom: 1rem;
+		word-wrap: break-word;
 		overflow-wrap: break-word;
-		white-space: normal;             /* ✅ 禁止单行超出 */
+		white-space: normal;
 	}
 }
 
