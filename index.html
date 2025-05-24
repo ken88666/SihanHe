@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
 		
 		<title>VelocityMotorsportBySihanHe</title>
@@ -34,20 +34,20 @@
 							<a href="#media">MEDIA</a>
 							<a href="#workshops">WORKSHOPS</a>
 						</nav>
-
-						<input type="checkbox" id="nav-toggle" class="nav-toggle" />
-						<label for="nav-toggle" class="hamburger">
-							<span></span>
-							<span></span>
-							<span></span>
-						</label>
-						<nav class="mobile-nav">
-							<a href="#works">Works</a>
-							<a href="#services">Services</a>
-							<a href="#projects">Intentory</a>
-							<a href="#about">Social</a>
-							<a href="#contact">Contact</a>
-						</nav>
+						<!-- Hamburger navigation -->
+							<input type="checkbox" id="nav-toggle" class="nav-toggle" />
+							<label for="nav-toggle" class="hamburger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</label>
+							<nav class="mobile-nav">
+								<a href="#works">Works</a>
+								<a href="#services">Services</a>
+								<a href="#projects">Intentory</a>
+								<a href="#about">Social</a>
+								<a href="#contact">Contact</a>
+							</nav>
 
 						<div class="menu-button">
 							<a href="#menu" class="login-button">LOG IN</a>
@@ -181,20 +181,21 @@
 			<script src="assets/js/main.js"></script>
 			
 			<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-		</body>
 
-		<script>
-		$(document).ready(function(){
-			$('.carousel-track').slick({
-			autoplay: true,
-			autoplaySpeed: 3000,
-			arrows: true,
-			dots: true,
-			infinite: true,
-			slidesToShow: 1,
-			slidesToScroll: 1,
+
+			<script>
+			$(document).ready(function(){
+				$('.carousel-track').slick({
+					autoplay: true,
+					autoplaySpeed: 3000,
+					arrows: true,
+					dots: true,
+					infinite: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				});
 			});
-		});
-		</script>
+			</script>
+	</body>
 
 </html>
