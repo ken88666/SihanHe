@@ -55,12 +55,11 @@
 					</header>
 
 				<!-- Menu: login modified -->
-					<nav id="menu" class="login-popup" alt="Login Menu">
-						<h2>Quick Login/Sign up</h2>
-						<form method="post" action="">
+					<nav id="menu" class="login-popup" alt="Login inferface">
+						<form method="post" action="index.html">
 							<input type="text" name="username" placeholder="Username" />
 							<input type="password" name="password" placeholder="Password" />
-							<input type="submit" value="KICK IN" class="primary" />
+							<input type="submit" value="LOG IN" class="primary" />
 						</form>
 					</nav>
 
@@ -182,7 +181,17 @@
 			
 			<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+			<script>
+				document.addEventListener('click', function (event) {
+					const menu = document.getElementById('menu');
+					const navToggle = document.getElementById('nav-toggle');
 
+					if (menu.contains(event.target)) return;
+
+					navToggle.checked = false;
+				});
+			</script>
+			
 			<script>
 			$(document).ready(function(){
 				$('.carousel-track').slick({
