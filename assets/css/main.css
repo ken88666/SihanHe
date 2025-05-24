@@ -100,7 +100,7 @@ input, select, textarea {
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8));
 		background-size: auto,
  cover;
 		background-attachment: fixed,
@@ -3466,7 +3466,7 @@ input, select, textarea {
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8));
 				background-size: auto,
  cover;
 				background-position: center,
@@ -3578,7 +3578,7 @@ input, select, textarea {
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8));
 			background-size: auto,
  cover;
 			background-position: center,
@@ -4039,7 +4039,7 @@ input, select, textarea {
 		}
 
 		#footer .inner .copyright {
-			border-top: solid 2px rgba(255, 255, 255, 0.125);
+			border-top: solid 2px rgb(113, 113, 113);
 			list-style: none;
 			margin: 4em 0 2em 0;
 			padding: 2em 0 0 0;
@@ -4047,7 +4047,7 @@ input, select, textarea {
 		}
 
 			#footer .inner .copyright li {
-				border-left: solid 2px rgba(255, 255, 255, 0.125);
+				border-left: solid 2px rgb(122, 122, 122);
 				color: rgba(255, 255, 255, 0.35);
 				display: inline-block;
 				font-size: 0.9em;
@@ -4071,7 +4071,7 @@ input, select, textarea {
 
 		#footer {
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8));
 			background-size: auto,
  cover;
 			background-position: center,
@@ -4244,7 +4244,7 @@ body {
     padding: 0 16px;
     font-size: 14px;
     border-radius: 20px;
-    background-color: rgb(237, 35, 35);
+    background-color: rgb(194, 10, 10);
     color: white;
     border: none;
     font-weight: bold;
@@ -4712,6 +4712,9 @@ a.special::before {
 	background-color: #000000;
 	margin-bottom: 0 !important;
 }
+#footer .copyright li {
+	color: #ffffff !important;
+}
 
 #footer h2,
 #footer p,
@@ -4723,7 +4726,7 @@ a.special::before {
 
 
 
-/* Wide screen media*/
+/* >1600px */
 @media screen and (min-width: 1600px) {
 	
 	#page-wrapper {
@@ -4768,7 +4771,7 @@ label.hamburger::after {
 }
 
 
-/* ─── 小屏断点（≤980px） ─── */
+/* ≤980px */
 @media screen and (max-width: 980px) {
   /* 隐藏大屏五连按钮 */
   	.floating-nav {
